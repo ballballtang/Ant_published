@@ -224,8 +224,8 @@ GameRoom2.prototype.update = function () {
                 else
                     dMax += "L ";
                 
-                minIndex = minIndex/2;
-                maxIndex = maxIndex/2;
+                minIndex = Math.floor(minIndex/2);
+                maxIndex = Math.floor(maxIndex/2);
             }
             document.getElementById("init_direction").innerHTML = dMin + " " + min;
             document.getElementById("Time").innerHTML = dMax + " " + max ;
